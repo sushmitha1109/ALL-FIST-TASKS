@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            MainPage
+        </title>
+        <meta charset="utf-8">
+             <meta name="viewport" content="width=device-width, initial-scale=1">
+             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+             <link rel="stylesheet" type="text/css" href="menu.css">
+             <link rel="stylesheet" type="text/css" href="wizard.css">
+             <link rel="stylesheet" type="text/css" href="style.css">
+             <script src="side.js"></script>
+             <script src="wform.js"></script>
+             
+    </head>
+           <body>
+                  <div id="content">
+                     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                        <div class="container-fluid">
+                           <button type="button" id="sidebarCollapse" class="btn btn-info">
+                                <i class="fas fa-align-left"></i>
+                                <div class ="collapse navbar-collapse" id="navbarSupportedContent"></div>
+                                <span>Menu</span>
+                            </button>
+                           </div>
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Logout</a>
+                                </li>
+                            </ul>
+                    </nav>
+                 </div> 
+                 <div class="row">
+                    <div class="col-sm-4">
+                    <div class="container-fluid">
+                         <div class="wrapper">
+                           <nav id="sidebar">
+                             <div class="sidebar-header">
+                                HOME
+                                </div>
+                                 <ul class="list-unstyled components">
+                                        <li class="active">
+                                         <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" ></a> 
+                                            <li>
+                                               <a href="home_pg.html">Profile</a>
+                                            </li> 
+                                            <li>
+                                                <a href="home_education.html">Education</a>
+                                            </li>
+                                            <li>
+                                                <a href="home_salary.html">
+                                                    Salary</a>
+                                            </li> 
+                                        </li> 
+                                    </ul>                          
+                                </div>
+                             </div>
+                        </div>
+                   </nav> 
+                   
+                   
+                      <div class="col-sm-8">
+                           <div class="container">
+                            <form class="regForm" >
+                                <b><h1>EDUCATION DETAILS </h1></b>
+                                <div class="pg_details active">PG/MASTER DEGREE:
+                                        <p><input placeholder="Institute Name" oninput="this.className = ''" name="Institute Name"></p>
+                                        <p><input placeholder="Degree" oninput="this.className = ''" name="Degree"></p>
+                                        <p><input placeholder="CGPA" oninput="this.className = ''" name="CGPA"></p>
+                                        <div style="overflow:auto;">
+                                            <div style="float:right;">
+                                              <button type="button" class="btn btn-info btn-lg" id="prev" >PREV</button>
+                                              <button type="button" class="btn btn-info btn-lg" id="next">NEXT</button>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="ug_details">UG DEGREE:
+                                        <p><input placeholder="Institute Name" oninput="this.className = ''" name="Institute Name1"></p>
+                                        <p><input placeholder="Degree" oninput="this.className = ''" name="Degree1"></p>
+                                        <p><input placeholder="CGPA" oninput="this.className = ''" name="CGPA1"></p>
+                                        <div style="overflow:auto;">
+                                            <div style="float:right;">
+                                              <button type="button" class="btn btn-info btn-lg" id="prev1" >PREV</button>
+                                              <button type="button" class="btn btn-info btn-lg" id="next1">NEXT</button>
+                                            </div>
+                                          </div>
+                                    </div>     
+                                 <div class="skills_details">SKILLS AND TECHNOLOGIES 
+                                      <p> <textarea rows="4" cols="50"></textarea></p> 
+                                       
+                                        <div style="overflow:auto;">
+                                            <div style="float:right;">
+                                              <button type="button" class="btn btn-info btn-lg" id="submit" >Submit</button>
+                                              
+                                            </div>
+                                        </div> 
+                                     </div>
+                                           <div style="text-align:center;margin-top:40px;">
+                                                <span class="step"></span>
+                                                <span class="step"></span>
+                                                <span class="step"></span>
+                                              </div>
+                                            
+                            </form>
+                        </div>
+                   </div>
+                 
+                           
+                
+    </body>
+</html>

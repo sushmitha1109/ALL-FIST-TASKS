@@ -1,0 +1,38 @@
+.step {
+  height: 25px;
+  width: 25px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+.regForm {
+  margin: auto;
+  font-family: Raleway;
+  width: 40%;
+  min-width: 250px;
+  box-sizing:content-box;
+  padding:100px;
+}
+input,textarea{
+  width: 60%;
+}
+.step.active {
+  opacity: 1;
+}
+.step.finish {
+  background-color: blue;
+}
+button {
+  background-color: grey;
+  border-radius:50%;
+  padding: 15px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+.active{
+display:block;
+}

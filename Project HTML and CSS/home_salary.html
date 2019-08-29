@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            MainPage
+        </title>
+        <meta charset="utf-8">
+             <meta name="viewport" content="width=device-width, initial-scale=1">
+             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+             <link rel="stylesheet" type="text/css" href="menu.css">
+             <link rel="stylesheet" type="text/css" href="style.css">
+             <script src="side.js"></script>
+    </head>
+    <body>
+            <div id="content">
+                    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                            
+                        <div class="container-fluid">
+                
+                            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                                <i class="fas fa-align-left"></i>
+                                <div class ="collapse navbar-collapse" id="navbarSupportedContent">
+                                </div>
+                                 <span>Menu</span>
+                            </button>
+                        </div>
+                        <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Logout</a>
+                                </li>
+                            </ul>
+                    </nav>
+                </div>
+                <div class="row">
+                        <div class="col-sm-4">
+                           <div class="container-fluid">
+                             <div class="wrapper">
+                               <nav id="sidebar">
+                                    <div class="sidebar-header">
+                                    HOME
+                                   </div>
+                    
+                                   <ul class="list-unstyled components">
+                                      <li class="active">
+                                         <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" ></a> 
+                                            <li>
+                                             <a href="home_pg.html">Profile</a>
+                                            </li> 
+                                            <li>
+                                            <a href="home_education.html">Education</a>
+                                            </li>
+                                            <li>
+                                                <a href="salary.html">
+                                                    Salary</a>
+                                            </li> 
+                                            
+                                      </li> 
+                             
+                                     </ul>
+                                    </nav>
+                                 </div>
+                             </div>
+                       </div>
+                   
+
+                       
+                       <div class="col-sm-8">
+                         <div class="style">
+                          <h1>Employee Details<br><br> </h1>
+                                   Employeename:<br><br>
+                                    <input type="text" name="username" placeholder="Employeename" id="message"><br><br>
+                                   Employee ID:<br><br>
+                                      <input type="text" name="username" placeholder="Employeename" id="ID"><br><br>
+                                      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" >INVOICE</button>
+                                     </div>
+                                        <div class="container"></div>
+                                                <div class="modal fade" id="myModal" role="dialog">
+                                                <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                        <div class="modal-header">
+                                                        <h4 class="modal-title">CTC</h4>
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        </div>
+                                                              <div class="modal-body">
+                                                                
+                                                                <strong>STATEMENT OF CTC</strong>
+                                                                <table>
+                                                                    <th>Particulrs</th>
+                                                                    <th>Amount(monthly)</th>
+                                                                    <th>Amount(annually)</th>
+                            
+                                                                <tr>
+                                                                    <td>Basic salary</td>
+                                                                    <td>6000</td>
+                                                                    <td>72,000</td>
+                                                                    
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>HRA</td>
+                                                                        <td>2400</td>
+                                                                        <td>28,000</td>
+                                                                 </tr>
+                                                                 <tr>
+                                                                        <td>Conveyence allowence</td>
+                                                                        <td>1600</td>
+                                                                        <td>19200</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td>Medical allowence</td>
+                                                                        <td>1200</td>
+                                                                        <td>15000</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    
+                                                                    <td>Special allowence</td>
+                                                                    <td>3750</td>
+                                                                    <td>45000</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Gross</td>
+                                                                    <td>12,578</td>
+                                                                    <td>1,95000</td>
+                                                                </tr>
+                                                                </table>
+                                                              </div>
+                                                              
+                            
+                                   
+                                    
+                 </div>
+            </div> 
+    </body>
+</html>

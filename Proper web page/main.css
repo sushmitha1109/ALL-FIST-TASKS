@@ -1,0 +1,52 @@
+#aaa{
+margin-left: 200px;
+}
+
+.view{
+    background-image: url("cover.jpg");
+    position: relative;
+    min-height: 600px;
+}
+.view .overlay{
+    position: absolute;
+    background-color: rgba(42, 212, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+
+}
+.info_underline{
+    border-bottom: 1px solid black;
+    width:35%;
+    height: 30px;
+    margin: auto;
+  
+}
+.img_final{
+     
+     margin-top: -100px;
+    
+}
+.last{
+    width: 80%;
+}
+
+#design .card:hover{
+  background: #3292a6;
+
+  
+}
+ @media (max-width: 768px)
+ {
+   .view{
+    min-height: 500px;
+     }
+   .view h2{
+        font-size: 3rem;
+          }
+   .textinput .space{
+          margin-bottom: 10px;
+   }       
+  
+ }

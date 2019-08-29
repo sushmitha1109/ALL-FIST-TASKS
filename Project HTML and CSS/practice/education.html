@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Education details 
+        </title>
+           <meta charset="utf-8">
+             <meta name="viewport" content="width=device-width, initial-scale=1">
+             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+             <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+             <link rel="stylesheet" type="text/css" href="wizard.css">
+             <script src="wform.js"></script>
+    </head>
+    <body> 
+           <div class="container">
+            <form class="regForm" >
+                <h1>EDUCATION DETAILS </h1>
+                <div class="pg_details active">PG/MASTER DEGREE:
+                        <p><input placeholder="Institute Name" oninput="this.className = ''" name="Institute Name"></p>
+                        <p><input placeholder="Degree" oninput="this.className = ''" name="Degree"></p>
+                        <p><input placeholder="CGPA" oninput="this.className = ''" name="CGPA"></p>
+                        <div style="overflow:auto;">
+                            <div style="float:right;">
+                              <button type="button" id="prev" >PREV</button>
+                              <button type="button" id="next">NEXT</button>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="ug_details">UG DEGREE:
+                        <p><input placeholder="Institute Name" oninput="this.className = ''" name="Institute Name1"></p>
+                        <p><input placeholder="Degree" oninput="this.className = ''" name="Degree1"></p>
+                        <p><input placeholder="CGPA" oninput="this.className = ''" name="CGPA1"></p>
+                        <div style="overflow:auto;">
+                            <div style="float:right;">
+                              <button type="button" id="prev1" >PREV</button>
+                              <button type="button" id="next1">NEXT</button>
+                            </div>
+                          </div>
+                    </div>     
+                 <div class="skills_details">SKILLS AND TECHNOLOGIES 
+                      <p> <textarea rows="4" cols="50"></textarea></p> 
+                       
+                        <div style="overflow:auto;">
+                            <div style="float:right;">
+                              <button type="button" id="submit" >Submit</button>
+                              
+                            </div>
+                        </div> 
+                     </div>
+                           <div style="text-align:center;margin-top:40px;">
+                                <span class="step"></span>
+                                <span class="step"></span>
+                                <span class="step"></span>
+                              </div>
+                            
+            </form>
+        </div>
+    </body>
+</html>
